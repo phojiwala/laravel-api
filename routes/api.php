@@ -9,3 +9,5 @@ Route::middleware(['auth:sanctum'])->get('/user', function (Request $request) {
 });
 
 Route::middleware(['auth:sanctum'])->get('/dashboard', [DashboardController::class, 'index']);
+Route::middleware(['auth:sanctum'])->post('/dashboard', [DashboardController::class, 'index']);
+Route::middleware(['auth:sanctum'])->put('/dashboard', [DashboardController::class, 'index']);
