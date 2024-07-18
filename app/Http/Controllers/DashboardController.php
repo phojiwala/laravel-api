@@ -25,9 +25,13 @@ class DashboardController extends Controller
     }
 
     // Sorting
-    $sortField = $request->input('sort_by', 'id');
-    $sortDirection = $request->input('sort_direction', 'asc');
-    $query->orderBy($sortField, $sortDirection);
+    $sortField = $request->input('sort_by', 'created_at');
+    $sortDirection = $request->input('sort_direction', 'desc');
+    if ($sortField === 'created_at') {
+      $query->latest();
+    } else {
+      $query->orderBy($sortField, $sortDirection);
+    }
 
     // Pagination
     $perPage = $request->input('per_page', 10);
@@ -39,6 +43,13 @@ class DashboardController extends Controller
       'total' => $items->total(),
       'last_page' => $items->lastPage(),
     ]);
+  }
+
+  public function destroy($id)
+  {
+    $item = DashboardItem::findOrFail($id);
+    $item->delete();
+    return response()->json(['message' => 'Item deleted successfully'], 200);
   }
 
   public function store(Request $request)
@@ -55,5 +66,23 @@ class DashboardController extends Controller
     }
     $item = DashboardItem::create($request->all());
     return response()->json($item, 201);
+  }
+
+  public function update(Request $request, $id)
+  {
+    $validator = Validator::make($request->all(), [
+      'title' => 'sometimes|required|string|max:255',
+      'price' => 'sometimes|required|numeric|min:0',
+      'description' => 'sometimes|required|string',
+      'category' => 'sometimes|required|string|max:255',
+    ]);
+
+    if ($validator->fails()) {
+      return response()->json(['errors' => $validator->errors()], 400);
+    }
+
+    $item = DashboardItem::findOrFail($id);
+    $item->update($request->all());
+    return response()->json($item, 200);
   }
 }
