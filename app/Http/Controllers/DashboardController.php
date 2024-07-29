@@ -59,12 +59,22 @@ class DashboardController extends Controller
       'price' => 'required|numeric|min:0',
       'description' => 'required|string',
       'category' => 'required|string|max:255',
+      'image' => 'nullable|file|mimes:jpeg,png,jpg,gif|max:5120',
     ]);
 
     if ($validator->fails()) {
       return response()->json(['errors' => $validator->errors()], 400);
     }
-    $item = DashboardItem::create($request->all());
+
+    $data = $request->all();
+
+    if ($request->hasFile('image')) {
+      $file = $request->file('image');
+      $path = $file->store('images', 'public');
+      $data['image'] = $path;
+    }
+
+    $item = DashboardItem::create($data);
     return response()->json($item, 201);
   }
 
@@ -75,6 +85,7 @@ class DashboardController extends Controller
       'price' => 'sometimes|required|numeric|min:0',
       'description' => 'sometimes|required|string',
       'category' => 'sometimes|required|string|max:255',
+      'image' => 'nullable|file|mimes:jpeg,png,jpg,gif|max:5120',
     ]);
 
     if ($validator->fails()) {
@@ -82,7 +93,15 @@ class DashboardController extends Controller
     }
 
     $item = DashboardItem::findOrFail($id);
-    $item->update($request->all());
+    $data = $request->all();
+
+    if ($request->hasFile('image')) {
+      $file = $request->file('image');
+      $path = $file->store('images', 'public');
+      $data['image'] = $path;
+    }
+
+    $item->update($data);
     return response()->json($item, 200);
   }
 }
