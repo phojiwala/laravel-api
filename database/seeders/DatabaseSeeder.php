@@ -15,6 +15,8 @@ class DatabaseSeeder extends Seeder
     {
         $this->call(DashboardItemsSeeder::class);
 
+        $this->call(AccountSeeder::class);
+
         User::factory()->create([
             'name' => 'Test User',
             'email' => 'test@example.com',

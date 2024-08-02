@@ -5,7 +5,7 @@
                 "uuid": "754b9bef-c62c-45c6-9454-6aec49ff9693",
                 "id": 1,
                 "createdAt": "2024-07-26 10:42:24",
-                "updatedAt": "2024-07-29 12:00:18",
+                "updatedAt": "2024-07-31 16:02:37",
                 "settings": {
                     "cssFramework": "other",
                     "uiStarterKit": "breeze",
@@ -24,7 +24,7 @@
                     "schemaReaderDbDatabase": "vemto_schema_reader",
                     "laravelVersion": "11.9"
                 },
-                "canShowSchemaSourceChangesAlert": true,
+                "canShowSchemaSourceChangesAlert": false,
                 "codeGenerationSettings": {
                     "models": true,
                     "factories": true,
@@ -94,7 +94,7 @@
                 "vthemeCdn": "https://cdn.tailwindcss.com",
                 "connectionFinished": true,
                 "canIgnoreNextSchemaSourceChanges": false,
-                "lastReadSchemaDataHash": "59cf1d494c14d5cf517194084cb06140",
+                "lastReadSchemaDataHash": "a3671867320ce76dde3e301f24fb48d0",
                 "currentSchemaError": null,
                 "currentSchemaErrorStack": null
             },
@@ -114,11 +114,13 @@
                                 7,
                                 8,
                                 9,
-                                10
+                                10,
+                                11
                             ],
                             "models.projectId": [
                                 1,
-                                2
+                                2,
+                                3
                             ],
                             "app_sections.projectId": [
                                 1,
@@ -491,15 +493,15 @@
                 },
                 "id": 1,
                 "createdAt": "2024-07-26 10:42:25",
-                "updatedAt": "2024-07-29 11:58:24",
-                "positionX": "-59",
-                "positionY": "-347",
+                "updatedAt": "2024-07-31 16:02:44",
+                "positionX": "-54",
+                "positionY": "-436",
                 "sectionId": 1,
                 "removed": false
             },
             "__tableData": {
-                "count": 10,
-                "lastPrimaryKey": 10,
+                "count": 11,
+                "lastPrimaryKey": 11,
                 "index": {
                     "1": {
                         "hasMany": {
@@ -631,6 +633,23 @@
                             ],
                             "models.tableId": [
                                 1
+                            ]
+                        }
+                    },
+                    "11": {
+                        "hasMany": {
+                            "columns.tableId": [
+                                66,
+                                67,
+                                68,
+                                69,
+                                70,
+                                71,
+                                72,
+                                73
+                            ],
+                            "models.tableId": [
+                                3
                             ]
                         }
                     }
@@ -987,7 +1006,7 @@
                 },
                 "id": 2,
                 "createdAt": "2024-07-26 10:42:25",
-                "updatedAt": "2024-07-29 11:58:24",
+                "updatedAt": "2024-07-31 16:02:36",
                 "positionX": 0,
                 "positionY": 0,
                 "sectionId": 2,
@@ -1341,7 +1360,7 @@
                 },
                 "id": 3,
                 "createdAt": "2024-07-26 10:42:25",
-                "updatedAt": "2024-07-29 11:58:24",
+                "updatedAt": "2024-07-31 16:02:36",
                 "positionX": 0,
                 "positionY": 0,
                 "sectionId": 2,
@@ -1509,7 +1528,7 @@
                 },
                 "id": 4,
                 "createdAt": "2024-07-26 10:42:25",
-                "updatedAt": "2024-07-29 11:58:24",
+                "updatedAt": "2024-07-31 16:02:36",
                 "positionX": 0,
                 "positionY": 0,
                 "sectionId": 2,
@@ -1677,7 +1696,7 @@
                 },
                 "id": 5,
                 "createdAt": "2024-07-26 10:42:25",
-                "updatedAt": "2024-07-29 11:58:24",
+                "updatedAt": "2024-07-31 16:02:36",
                 "positionX": 0,
                 "positionY": 0,
                 "sectionId": 2,
@@ -2127,7 +2146,7 @@
                 },
                 "id": 6,
                 "createdAt": "2024-07-26 10:42:25",
-                "updatedAt": "2024-07-29 11:58:24",
+                "updatedAt": "2024-07-31 16:02:36",
                 "positionX": 0,
                 "positionY": 0,
                 "sectionId": 2,
@@ -2577,7 +2596,7 @@
                 },
                 "id": 7,
                 "createdAt": "2024-07-26 10:42:25",
-                "updatedAt": "2024-07-29 11:58:24",
+                "updatedAt": "2024-07-31 16:02:36",
                 "positionX": 0,
                 "positionY": 0,
                 "sectionId": 2,
@@ -3027,7 +3046,7 @@
                 },
                 "id": 8,
                 "createdAt": "2024-07-26 10:42:25",
-                "updatedAt": "2024-07-29 11:58:24",
+                "updatedAt": "2024-07-31 16:02:36",
                 "positionX": 0,
                 "positionY": 0,
                 "sectionId": 2,
@@ -3269,7 +3288,7 @@
                 },
                 "id": 9,
                 "createdAt": "2024-07-26 10:42:25",
-                "updatedAt": "2024-07-29 11:58:24",
+                "updatedAt": "2024-07-31 16:02:36",
                 "positionX": 0,
                 "positionY": 0,
                 "sectionId": 2,
@@ -3441,11 +3460,204 @@
                 },
                 "id": 10,
                 "createdAt": "2024-07-26 10:42:25",
-                "updatedAt": "2024-07-29 11:58:24",
-                "positionX": "-483",
-                "positionY": "-323",
+                "updatedAt": "2024-07-31 16:02:43",
+                "positionX": "-474",
+                "positionY": "-392",
                 "sectionId": 1,
                 "removed": false
+            },
+            "item_11": {
+                "projectId": 1,
+                "name": "accounts",
+                "migrations": [
+                    {
+                        "migration": "D:\\Preyash\\only-api/database/migrations/2024_07_31_094738_create_accounts_table.php",
+                        "relativePath": "/database/migrations/2024_07_31_094738_create_accounts_table.php",
+                        "migrationName": "2024_07_31_094738_create_accounts_table",
+                        "datePrefix": "2024_07_31",
+                        "fullPrefix": "2024_07_31_094738",
+                        "addedColumns": [
+                            {
+                                "type": "bigInteger",
+                                "name": "id",
+                                "autoIncrement": true,
+                                "unsigned": true,
+                                "table": "accounts",
+                                "creatorMethod": "id"
+                            },
+                            {
+                                "type": "string",
+                                "name": "first_name",
+                                "length": 255,
+                                "table": "accounts",
+                                "creatorMethod": "string"
+                            },
+                            {
+                                "type": "string",
+                                "name": "last_name",
+                                "length": 255,
+                                "table": "accounts",
+                                "creatorMethod": "string"
+                            },
+                            {
+                                "type": "string",
+                                "name": "email",
+                                "length": 255,
+                                "table": "accounts",
+                                "creatorMethod": "string",
+                                "unique": true
+                            },
+                            {
+                                "type": "string",
+                                "name": "phone",
+                                "length": 255,
+                                "table": "accounts",
+                                "creatorMethod": "string"
+                            },
+                            {
+                                "type": "enum",
+                                "name": "status",
+                                "allowed": [
+                                    "active",
+                                    "inactive"
+                                ],
+                                "table": "accounts",
+                                "creatorMethod": "enum"
+                            },
+                            {
+                                "type": "timestamp",
+                                "name": "created_at",
+                                "precision": 0,
+                                "table": "accounts",
+                                "creatorMethod": "timestamps",
+                                "nullable": true
+                            },
+                            {
+                                "type": "timestamp",
+                                "name": "updated_at",
+                                "precision": 0,
+                                "table": "accounts",
+                                "creatorMethod": "timestamps",
+                                "nullable": true
+                            }
+                        ],
+                        "changedColumns": [],
+                        "droppedColumns": [],
+                        "renamedColumns": [],
+                        "commands": [
+                            {
+                                "name": "create",
+                                "table": "accounts"
+                            }
+                        ],
+                        "createdTables": [
+                            "accounts"
+                        ],
+                        "renamedTables": [],
+                        "droppedTables": []
+                    }
+                ],
+                "oldNames": [],
+                "createdFromInterface": false,
+                "labelColumnId": null,
+                "schemaState": {
+                    "name": "accounts",
+                    "oldNames": [],
+                    "migrations": [
+                        {
+                            "migration": "D:\\Preyash\\only-api/database/migrations/2024_07_31_094738_create_accounts_table.php",
+                            "relativePath": "/database/migrations/2024_07_31_094738_create_accounts_table.php",
+                            "migrationName": "2024_07_31_094738_create_accounts_table",
+                            "datePrefix": "2024_07_31",
+                            "fullPrefix": "2024_07_31_094738",
+                            "addedColumns": [
+                                {
+                                    "type": "bigInteger",
+                                    "name": "id",
+                                    "autoIncrement": true,
+                                    "unsigned": true,
+                                    "table": "accounts",
+                                    "creatorMethod": "id"
+                                },
+                                {
+                                    "type": "string",
+                                    "name": "first_name",
+                                    "length": 255,
+                                    "table": "accounts",
+                                    "creatorMethod": "string"
+                                },
+                                {
+                                    "type": "string",
+                                    "name": "last_name",
+                                    "length": 255,
+                                    "table": "accounts",
+                                    "creatorMethod": "string"
+                                },
+                                {
+                                    "type": "string",
+                                    "name": "email",
+                                    "length": 255,
+                                    "table": "accounts",
+                                    "creatorMethod": "string",
+                                    "unique": true
+                                },
+                                {
+                                    "type": "string",
+                                    "name": "phone",
+                                    "length": 255,
+                                    "table": "accounts",
+                                    "creatorMethod": "string"
+                                },
+                                {
+                                    "type": "enum",
+                                    "name": "status",
+                                    "allowed": [
+                                        "active",
+                                        "inactive"
+                                    ],
+                                    "table": "accounts",
+                                    "creatorMethod": "enum"
+                                },
+                                {
+                                    "type": "timestamp",
+                                    "name": "created_at",
+                                    "precision": 0,
+                                    "table": "accounts",
+                                    "creatorMethod": "timestamps",
+                                    "nullable": true
+                                },
+                                {
+                                    "type": "timestamp",
+                                    "name": "updated_at",
+                                    "precision": 0,
+                                    "table": "accounts",
+                                    "creatorMethod": "timestamps",
+                                    "nullable": true
+                                }
+                            ],
+                            "changedColumns": [],
+                            "droppedColumns": [],
+                            "renamedColumns": [],
+                            "commands": [
+                                {
+                                    "name": "create",
+                                    "table": "accounts"
+                                }
+                            ],
+                            "createdTables": [
+                                "accounts"
+                            ],
+                            "renamedTables": [],
+                            "droppedTables": []
+                        }
+                    ]
+                },
+                "sectionId": 1,
+                "id": 11,
+                "createdAt": "2024-07-31 16:02:37",
+                "updatedAt": "2024-07-31 16:02:47",
+                "positionX": "-34",
+                "positionY": "5"
             }
         },
         "columns": {
@@ -3472,11 +3684,11 @@
                 "options": [],
                 "id": 1,
                 "createdAt": "2024-07-26 10:42:25",
-                "updatedAt": "2024-07-29 11:58:24"
+                "updatedAt": "2024-07-31 16:02:36"
             },
             "__tableData": {
-                "count": 64,
-                "lastPrimaryKey": 65,
+                "count": 72,
+                "lastPrimaryKey": 73,
                 "index": {
                     "1": {
                         "hasMany": {}
@@ -3719,6 +3931,30 @@
                     },
                     "64": {
                         "hasMany": {}
+                    },
+                    "66": {
+                        "hasMany": {}
+                    },
+                    "67": {
+                        "hasMany": {}
+                    },
+                    "68": {
+                        "hasMany": {}
+                    },
+                    "69": {
+                        "hasMany": {}
+                    },
+                    "70": {
+                        "hasMany": {}
+                    },
+                    "71": {
+                        "hasMany": {}
+                    },
+                    "72": {
+                        "hasMany": {}
+                    },
+                    "73": {
+                        "hasMany": {}
                     }
                 },
                 "additionalIndexes": {},
@@ -3742,7 +3978,7 @@
                 "options": [],
                 "id": 2,
                 "createdAt": "2024-07-26 10:42:25",
-                "updatedAt": "2024-07-29 11:58:24"
+                "updatedAt": "2024-07-31 16:02:36"
             },
             "item_3": {
                 "name": "email",
@@ -3763,7 +3999,7 @@
                 "options": [],
                 "id": 3,
                 "createdAt": "2024-07-26 10:42:25",
-                "updatedAt": "2024-07-29 11:58:24"
+                "updatedAt": "2024-07-31 16:02:36"
             },
             "item_4": {
                 "name": "email_verified_at",
@@ -3782,7 +4018,7 @@
                 "options": [],
                 "id": 4,
                 "createdAt": "2024-07-26 10:42:25",
-                "updatedAt": "2024-07-29 11:58:24"
+                "updatedAt": "2024-07-31 16:02:36"
             },
             "item_5": {
                 "name": "password",
@@ -3801,7 +4037,7 @@
                 "options": [],
                 "id": 5,
                 "createdAt": "2024-07-26 10:42:25",
-                "updatedAt": "2024-07-29 11:58:24"
+                "updatedAt": "2024-07-31 16:02:36"
             },
             "item_6": {
                 "name": "remember_token",
@@ -3822,7 +4058,7 @@
                 "options": [],
                 "id": 6,
                 "createdAt": "2024-07-26 10:42:25",
-                "updatedAt": "2024-07-29 11:58:24"
+                "updatedAt": "2024-07-31 16:02:36"
             },
             "item_7": {
                 "name": "created_at",
@@ -3841,7 +4077,7 @@
                 "options": [],
                 "id": 7,
                 "createdAt": "2024-07-26 10:42:25",
-                "updatedAt": "2024-07-29 11:58:24"
+                "updatedAt": "2024-07-31 16:02:36"
             },
             "item_8": {
                 "name": "updated_at",
@@ -3860,7 +4096,7 @@
                 "options": [],
                 "id": 8,
                 "createdAt": "2024-07-26 10:42:25",
-                "updatedAt": "2024-07-29 11:58:24"
+                "updatedAt": "2024-07-31 16:02:36"
             },
             "item_9": {
                 "name": "email",
@@ -3885,7 +4121,7 @@
                 "options": [],
                 "id": 9,
                 "createdAt": "2024-07-26 10:42:25",
-                "updatedAt": "2024-07-29 11:58:24"
+                "updatedAt": "2024-07-31 16:02:36"
             },
             "item_10": {
                 "name": "token",
@@ -3904,7 +4140,7 @@
                 "options": [],
                 "id": 10,
                 "createdAt": "2024-07-26 10:42:25",
-                "updatedAt": "2024-07-29 11:58:24"
+                "updatedAt": "2024-07-31 16:02:36"
             },
             "item_11": {
                 "name": "created_at",
@@ -3923,7 +4159,7 @@
                 "options": [],
                 "id": 11,
                 "createdAt": "2024-07-26 10:42:25",
-                "updatedAt": "2024-07-29 11:58:24"
+                "updatedAt": "2024-07-31 16:02:36"
             },
             "item_12": {
                 "name": "id",
@@ -3947,7 +4183,7 @@
                 "options": [],
                 "id": 12,
                 "createdAt": "2024-07-26 10:42:25",
-                "updatedAt": "2024-07-29 11:58:24"
+                "updatedAt": "2024-07-31 16:02:36"
             },
             "item_13": {
                 "name": "user_id",
@@ -3972,7 +4208,7 @@
                 "options": [],
                 "id": 13,
                 "createdAt": "2024-07-26 10:42:25",
-                "updatedAt": "2024-07-29 11:58:24"
+                "updatedAt": "2024-07-31 16:02:36"
             },
             "item_14": {
                 "name": "ip_address",
@@ -3993,7 +4229,7 @@
                 "options": [],
                 "id": 14,
                 "createdAt": "2024-07-26 10:42:25",
-                "updatedAt": "2024-07-29 11:58:24"
+                "updatedAt": "2024-07-31 16:02:36"
             },
             "item_15": {
                 "name": "user_agent",
@@ -4012,7 +4248,7 @@
                 "options": [],
                 "id": 15,
                 "createdAt": "2024-07-26 10:42:25",
-                "updatedAt": "2024-07-29 11:58:24"
+                "updatedAt": "2024-07-31 16:02:36"
             },
             "item_16": {
                 "name": "payload",
@@ -4029,7 +4265,7 @@
                 "options": [],
                 "id": 16,
                 "createdAt": "2024-07-26 10:42:25",
-                "updatedAt": "2024-07-29 11:58:24"
+                "updatedAt": "2024-07-31 16:02:36"
             },
             "item_17": {
                 "name": "last_activity",
@@ -4052,7 +4288,7 @@
                 "options": [],
                 "id": 17,
                 "createdAt": "2024-07-26 10:42:25",
-                "updatedAt": "2024-07-29 11:58:24"
+                "updatedAt": "2024-07-31 16:02:36"
             },
             "item_18": {
                 "name": "key",
@@ -4077,7 +4313,7 @@
                 "options": [],
                 "id": 18,
                 "createdAt": "2024-07-26 10:42:25",
-                "updatedAt": "2024-07-29 11:58:24"
+                "updatedAt": "2024-07-31 16:02:36"
             },
             "item_19": {
                 "name": "value",
@@ -4094,7 +4330,7 @@
                 "options": [],
                 "id": 19,
                 "createdAt": "2024-07-26 10:42:25",
-                "updatedAt": "2024-07-29 11:58:24"
+                "updatedAt": "2024-07-31 16:02:36"
             },
             "item_20": {
                 "name": "expiration",
@@ -4115,7 +4351,7 @@
                 "options": [],
                 "id": 20,
                 "createdAt": "2024-07-26 10:42:25",
-                "updatedAt": "2024-07-29 11:58:24"
+                "updatedAt": "2024-07-31 16:02:36"
             },
             "item_21": {
                 "name": "key",
@@ -4140,7 +4376,7 @@
                 "options": [],
                 "id": 21,
                 "createdAt": "2024-07-26 10:42:25",
-                "updatedAt": "2024-07-29 11:58:24"
+                "updatedAt": "2024-07-31 16:02:36"
             },
             "item_22": {
                 "name": "owner",
@@ -4159,7 +4395,7 @@
                 "options": [],
                 "id": 22,
                 "createdAt": "2024-07-26 10:42:25",
-                "updatedAt": "2024-07-29 11:58:24"
+                "updatedAt": "2024-07-31 16:02:36"
             },
             "item_23": {
                 "name": "expiration",
@@ -4180,7 +4416,7 @@
                 "options": [],
                 "id": 23,
                 "createdAt": "2024-07-26 10:42:25",
-                "updatedAt": "2024-07-29 11:58:24"
+                "updatedAt": "2024-07-31 16:02:36"
             },
             "item_24": {
                 "name": "id",
@@ -4205,7 +4441,7 @@
                 "options": [],
                 "id": 24,
                 "createdAt": "2024-07-26 10:42:25",
-                "updatedAt": "2024-07-29 11:58:24"
+                "updatedAt": "2024-07-31 16:02:36"
             },
             "item_25": {
                 "name": "queue",
@@ -4226,7 +4462,7 @@
                 "options": [],
                 "id": 25,
                 "createdAt": "2024-07-26 10:42:25",
-                "updatedAt": "2024-07-29 11:58:24"
+                "updatedAt": "2024-07-31 16:02:36"
             },
             "item_26": {
                 "name": "payload",
@@ -4243,7 +4479,7 @@
                 "options": [],
                 "id": 26,
                 "createdAt": "2024-07-26 10:42:25",
-                "updatedAt": "2024-07-29 11:58:24"
+                "updatedAt": "2024-07-31 16:02:36"
             },
             "item_27": {
                 "name": "attempts",
@@ -4264,7 +4500,7 @@
                 "options": [],
                 "id": 27,
                 "createdAt": "2024-07-26 10:42:25",
-                "updatedAt": "2024-07-29 11:58:24"
+                "updatedAt": "2024-07-31 16:02:36"
             },
             "item_28": {
                 "name": "reserved_at",
@@ -4287,7 +4523,7 @@
                 "options": [],
                 "id": 28,
                 "createdAt": "2024-07-26 10:42:25",
-                "updatedAt": "2024-07-29 11:58:24"
+                "updatedAt": "2024-07-31 16:02:36"
             },
             "item_29": {
                 "name": "available_at",
@@ -4308,7 +4544,7 @@
                 "options": [],
                 "id": 29,
                 "createdAt": "2024-07-26 10:42:25",
-                "updatedAt": "2024-07-29 11:58:24"
+                "updatedAt": "2024-07-31 16:02:36"
             },
             "item_30": {
                 "name": "created_at",
@@ -4329,7 +4565,7 @@
                 "options": [],
                 "id": 30,
                 "createdAt": "2024-07-26 10:42:25",
-                "updatedAt": "2024-07-29 11:58:24"
+                "updatedAt": "2024-07-31 16:02:36"
             },
             "item_31": {
                 "name": "id",
@@ -4353,7 +4589,7 @@
                 "options": [],
                 "id": 31,
                 "createdAt": "2024-07-26 10:42:25",
-                "updatedAt": "2024-07-29 11:58:24"
+                "updatedAt": "2024-07-31 16:02:36"
             },
             "item_32": {
                 "name": "name",
@@ -4372,7 +4608,7 @@
                 "options": [],
                 "id": 32,
                 "createdAt": "2024-07-26 10:42:25",
-                "updatedAt": "2024-07-29 11:58:24"
+                "updatedAt": "2024-07-31 16:02:36"
             },
             "item_33": {
                 "name": "total_jobs",
@@ -4393,7 +4629,7 @@
                 "options": [],
                 "id": 33,
                 "createdAt": "2024-07-26 10:42:25",
-                "updatedAt": "2024-07-29 11:58:24"
+                "updatedAt": "2024-07-31 16:02:36"
             },
             "item_34": {
                 "name": "pending_jobs",
@@ -4414,7 +4650,7 @@
                 "options": [],
                 "id": 34,
                 "createdAt": "2024-07-26 10:42:25",
-                "updatedAt": "2024-07-29 11:58:24"
+                "updatedAt": "2024-07-31 16:02:36"
             },
             "item_35": {
                 "name": "failed_jobs",
@@ -4435,7 +4671,7 @@
                 "options": [],
                 "id": 35,
                 "createdAt": "2024-07-26 10:42:25",
-                "updatedAt": "2024-07-29 11:58:24"
+                "updatedAt": "2024-07-31 16:02:36"
             },
             "item_36": {
                 "name": "failed_job_ids",
@@ -4452,7 +4688,7 @@
                 "options": [],
                 "id": 36,
                 "createdAt": "2024-07-26 10:42:25",
-                "updatedAt": "2024-07-29 11:58:24"
+                "updatedAt": "2024-07-31 16:02:36"
             },
             "item_37": {
                 "name": "options",
@@ -4471,7 +4707,7 @@
                 "options": [],
                 "id": 37,
                 "createdAt": "2024-07-26 10:42:25",
-                "updatedAt": "2024-07-29 11:58:24"
+                "updatedAt": "2024-07-31 16:02:36"
             },
             "item_38": {
                 "name": "cancelled_at",
@@ -4494,7 +4730,7 @@
                 "options": [],
                 "id": 38,
                 "createdAt": "2024-07-26 10:42:25",
-                "updatedAt": "2024-07-29 11:58:24"
+                "updatedAt": "2024-07-31 16:02:36"
             },
             "item_39": {
                 "name": "created_at",
@@ -4515,7 +4751,7 @@
                 "options": [],
                 "id": 39,
                 "createdAt": "2024-07-26 10:42:25",
-                "updatedAt": "2024-07-29 11:58:24"
+                "updatedAt": "2024-07-31 16:02:36"
             },
             "item_40": {
                 "name": "finished_at",
@@ -4538,7 +4774,7 @@
                 "options": [],
                 "id": 40,
                 "createdAt": "2024-07-26 10:42:25",
-                "updatedAt": "2024-07-29 11:58:24"
+                "updatedAt": "2024-07-31 16:02:36"
             },
             "item_41": {
                 "name": "id",
@@ -4563,7 +4799,7 @@
                 "options": [],
                 "id": 41,
                 "createdAt": "2024-07-26 10:42:25",
-                "updatedAt": "2024-07-29 11:58:24"
+                "updatedAt": "2024-07-31 16:02:36"
             },
             "item_42": {
                 "name": "uuid",
@@ -4584,7 +4820,7 @@
                 "options": [],
                 "id": 42,
                 "createdAt": "2024-07-26 10:42:25",
-                "updatedAt": "2024-07-29 11:58:24"
+                "updatedAt": "2024-07-31 16:02:36"
             },
             "item_43": {
                 "name": "connection",
@@ -4601,7 +4837,7 @@
                 "options": [],
                 "id": 43,
                 "createdAt": "2024-07-26 10:42:25",
-                "updatedAt": "2024-07-29 11:58:24"
+                "updatedAt": "2024-07-31 16:02:36"
             },
             "item_44": {
                 "name": "queue",
@@ -4618,7 +4854,7 @@
                 "options": [],
                 "id": 44,
                 "createdAt": "2024-07-26 10:42:25",
-                "updatedAt": "2024-07-29 11:58:24"
+                "updatedAt": "2024-07-31 16:02:36"
             },
             "item_45": {
                 "name": "payload",
@@ -4635,7 +4871,7 @@
                 "options": [],
                 "id": 45,
                 "createdAt": "2024-07-26 10:42:25",
-                "updatedAt": "2024-07-29 11:58:24"
+                "updatedAt": "2024-07-31 16:02:36"
             },
             "item_46": {
                 "name": "exception",
@@ -4652,7 +4888,7 @@
                 "options": [],
                 "id": 46,
                 "createdAt": "2024-07-26 10:42:25",
-                "updatedAt": "2024-07-29 11:58:24"
+                "updatedAt": "2024-07-31 16:02:36"
             },
             "item_47": {
                 "name": "failed_at",
@@ -4669,7 +4905,7 @@
                 "options": [],
                 "id": 47,
                 "createdAt": "2024-07-26 10:42:25",
-                "updatedAt": "2024-07-29 11:58:24"
+                "updatedAt": "2024-07-31 16:02:36"
             },
             "item_48": {
                 "name": "id",
@@ -4694,7 +4930,7 @@
                 "options": [],
                 "id": 48,
                 "createdAt": "2024-07-26 10:42:25",
-                "updatedAt": "2024-07-29 11:58:24"
+                "updatedAt": "2024-07-31 16:02:37"
             },
             "item_49": {
                 "name": "tokenable_type",
@@ -4715,7 +4951,7 @@
                 "options": [],
                 "id": 49,
                 "createdAt": "2024-07-26 10:42:25",
-                "updatedAt": "2024-07-29 11:58:24"
+                "updatedAt": "2024-07-31 16:02:37"
             },
             "item_50": {
                 "name": "tokenable_id",
@@ -4738,7 +4974,7 @@
                 "options": [],
                 "id": 50,
                 "createdAt": "2024-07-26 10:42:25",
-                "updatedAt": "2024-07-29 11:58:24"
+                "updatedAt": "2024-07-31 16:02:37"
             },
             "item_51": {
                 "name": "name",
@@ -4757,7 +4993,7 @@
                 "options": [],
                 "id": 51,
                 "createdAt": "2024-07-26 10:42:25",
-                "updatedAt": "2024-07-29 11:58:24"
+                "updatedAt": "2024-07-31 16:02:37"
             },
             "item_52": {
                 "name": "token",
@@ -4778,7 +5014,7 @@
                 "options": [],
                 "id": 52,
                 "createdAt": "2024-07-26 10:42:25",
-                "updatedAt": "2024-07-29 11:58:24"
+                "updatedAt": "2024-07-31 16:02:37"
             },
             "item_53": {
                 "name": "abilities",
@@ -4797,7 +5033,7 @@
                 "options": [],
                 "id": 53,
                 "createdAt": "2024-07-26 10:42:25",
-                "updatedAt": "2024-07-29 11:58:24"
+                "updatedAt": "2024-07-31 16:02:37"
             },
             "item_54": {
                 "name": "last_used_at",
@@ -4816,7 +5052,7 @@
                 "options": [],
                 "id": 54,
                 "createdAt": "2024-07-26 10:42:25",
-                "updatedAt": "2024-07-29 11:58:24"
+                "updatedAt": "2024-07-31 16:02:37"
             },
             "item_55": {
                 "name": "expires_at",
@@ -4835,7 +5071,7 @@
                 "options": [],
                 "id": 55,
                 "createdAt": "2024-07-26 10:42:25",
-                "updatedAt": "2024-07-29 11:58:24"
+                "updatedAt": "2024-07-31 16:02:37"
             },
             "item_56": {
                 "name": "created_at",
@@ -4854,7 +5090,7 @@
                 "options": [],
                 "id": 56,
                 "createdAt": "2024-07-26 10:42:25",
-                "updatedAt": "2024-07-29 11:58:24"
+                "updatedAt": "2024-07-31 16:02:37"
             },
             "item_57": {
                 "name": "updated_at",
@@ -4873,7 +5109,7 @@
                 "options": [],
                 "id": 57,
                 "createdAt": "2024-07-26 10:42:25",
-                "updatedAt": "2024-07-29 11:58:24"
+                "updatedAt": "2024-07-31 16:02:37"
             },
             "item_58": {
                 "name": "id",
@@ -4898,7 +5134,7 @@
                 "options": [],
                 "id": 58,
                 "createdAt": "2024-07-26 10:42:25",
-                "updatedAt": "2024-07-29 11:58:24"
+                "updatedAt": "2024-07-31 16:02:37"
             },
             "item_59": {
                 "name": "title",
@@ -4917,7 +5153,7 @@
                 "options": [],
                 "id": 59,
                 "createdAt": "2024-07-26 10:42:25",
-                "updatedAt": "2024-07-29 11:58:24"
+                "updatedAt": "2024-07-31 16:02:37"
             },
             "item_60": {
                 "name": "price",
@@ -4938,7 +5174,7 @@
                 "options": [],
                 "id": 60,
                 "createdAt": "2024-07-26 10:42:25",
-                "updatedAt": "2024-07-29 11:58:24"
+                "updatedAt": "2024-07-31 16:02:37"
             },
             "item_61": {
                 "name": "description",
@@ -4955,7 +5191,7 @@
                 "options": [],
                 "id": 61,
                 "createdAt": "2024-07-26 10:42:25",
-                "updatedAt": "2024-07-29 11:58:24"
+                "updatedAt": "2024-07-31 16:02:37"
             },
             "item_62": {
                 "name": "category",
@@ -4974,7 +5210,7 @@
                 "options": [],
                 "id": 62,
                 "createdAt": "2024-07-26 10:42:25",
-                "updatedAt": "2024-07-29 11:58:24"
+                "updatedAt": "2024-07-31 16:02:37"
             },
             "item_63": {
                 "name": "created_at",
@@ -4993,7 +5229,7 @@
                 "options": [],
                 "id": 63,
                 "createdAt": "2024-07-26 10:42:25",
-                "updatedAt": "2024-07-29 11:58:24"
+                "updatedAt": "2024-07-31 16:02:37"
             },
             "item_64": {
                 "name": "updated_at",
@@ -5012,7 +5248,213 @@
                 "options": [],
                 "id": 64,
                 "createdAt": "2024-07-26 10:42:25",
-                "updatedAt": "2024-07-29 11:58:24"
+                "updatedAt": "2024-07-31 16:02:37"
+            },
+            "item_66": {
+                "name": "id",
+                "type": "bigInteger",
+                "index": false,
+                "length": null,
+                "unique": false,
+                "tableId": 11,
+                "removed": false,
+                "schemaState": {
+                    "name": "id",
+                    "unsigned": true,
+                    "autoIncrement": true,
+                    "type": "bigInteger",
+                    "options": []
+                },
+                "nullable": false,
+                "unsigned": true,
+                "default": "",
+                "autoIncrement": true,
+                "order": 0,
+                "options": [],
+                "id": 66,
+                "createdAt": "2024-07-31 16:02:37",
+                "updatedAt": "2024-07-31 16:02:37"
+            },
+            "item_67": {
+                "name": "first_name",
+                "type": "string",
+                "index": false,
+                "length": 255,
+                "unique": false,
+                "tableId": 11,
+                "removed": false,
+                "schemaState": {
+                    "name": "first_name",
+                    "length": 255,
+                    "type": "string",
+                    "options": []
+                },
+                "nullable": false,
+                "unsigned": false,
+                "default": "",
+                "autoIncrement": false,
+                "faker": "fake()->firstName()",
+                "order": 1,
+                "options": [],
+                "id": 67,
+                "createdAt": "2024-07-31 16:02:37",
+                "updatedAt": "2024-07-31 16:02:37"
+            },
+            "item_68": {
+                "name": "last_name",
+                "type": "string",
+                "index": false,
+                "length": 255,
+                "unique": false,
+                "tableId": 11,
+                "removed": false,
+                "schemaState": {
+                    "name": "last_name",
+                    "length": 255,
+                    "type": "string",
+                    "options": []
+                },
+                "nullable": false,
+                "unsigned": false,
+                "default": "",
+                "autoIncrement": false,
+                "faker": "fake()->lastName()",
+                "order": 2,
+                "options": [],
+                "id": 68,
+                "createdAt": "2024-07-31 16:02:37",
+                "updatedAt": "2024-07-31 16:02:37"
+            },
+            "item_69": {
+                "name": "email",
+                "type": "string",
+                "index": false,
+                "length": 255,
+                "unique": true,
+                "tableId": 11,
+                "removed": false,
+                "schemaState": {
+                    "name": "email",
+                    "length": 255,
+                    "type": "string",
+                    "unique": true,
+                    "options": []
+                },
+                "nullable": false,
+                "unsigned": false,
+                "default": "",
+                "autoIncrement": false,
+                "faker": "fake()->unique()->safeEmail()",
+                "order": 3,
+                "options": [],
+                "id": 69,
+                "createdAt": "2024-07-31 16:02:37",
+                "updatedAt": "2024-07-31 16:02:37"
+            },
+            "item_70": {
+                "name": "phone",
+                "type": "string",
+                "index": false,
+                "length": 255,
+                "unique": false,
+                "tableId": 11,
+                "removed": false,
+                "schemaState": {
+                    "name": "phone",
+                    "length": 255,
+                    "type": "string",
+                    "options": []
+                },
+                "nullable": false,
+                "unsigned": false,
+                "default": "",
+                "autoIncrement": false,
+                "faker": "fake()->phoneNumber()",
+                "order": 4,
+                "options": [],
+                "id": 70,
+                "createdAt": "2024-07-31 16:02:37",
+                "updatedAt": "2024-07-31 16:02:37"
+            },
+            "item_71": {
+                "name": "status",
+                "type": "enum",
+                "index": false,
+                "length": null,
+                "unique": false,
+                "tableId": 11,
+                "removed": false,
+                "schemaState": {
+                    "name": "status",
+                    "type": "enum",
+                    "options": [
+                        "active",
+                        "inactive"
+                    ]
+                },
+                "nullable": false,
+                "unsigned": false,
+                "default": "",
+                "autoIncrement": false,
+                "faker": "fake()->word()",
+                "order": 5,
+                "options": [
+                    "active",
+                    "inactive"
+                ],
+                "id": 71,
+                "createdAt": "2024-07-31 16:02:37",
+                "updatedAt": "2024-07-31 16:02:37"
+            },
+            "item_72": {
+                "name": "created_at",
+                "type": "timestamp",
+                "index": false,
+                "length": null,
+                "unique": false,
+                "tableId": 11,
+                "removed": false,
+                "schemaState": {
+                    "name": "created_at",
+                    "nullable": true,
+                    "type": "timestamp",
+                    "options": []
+                },
+                "nullable": true,
+                "unsigned": false,
+                "default": "",
+                "autoIncrement": false,
+                "faker": "fake()->dateTime()",
+                "order": 6,
+                "options": [],
+                "id": 72,
+                "createdAt": "2024-07-31 16:02:37",
+                "updatedAt": "2024-07-31 16:02:37"
+            },
+            "item_73": {
+                "name": "updated_at",
+                "type": "timestamp",
+                "index": false,
+                "length": null,
+                "unique": false,
+                "tableId": 11,
+                "removed": false,
+                "schemaState": {
+                    "name": "updated_at",
+                    "nullable": true,
+                    "type": "timestamp",
+                    "options": []
+                },
+                "nullable": true,
+                "unsigned": false,
+                "default": "",
+                "autoIncrement": false,
+                "faker": "fake()->dateTime()",
+                "order": 7,
+                "options": [],
+                "id": 73,
+                "createdAt": "2024-07-31 16:02:37",
+                "updatedAt": "2024-07-31 16:02:37"
             }
         },
         "indices": {
@@ -5036,7 +5478,7 @@
                 },
                 "id": 1,
                 "createdAt": "2024-07-26 10:42:25",
-                "updatedAt": "2024-07-29 11:58:24",
+                "updatedAt": "2024-07-31 16:02:37",
                 "removed": false
             },
             "__tableData": {
@@ -5102,7 +5544,8 @@
                     "title",
                     "price",
                     "description",
-                    "category"
+                    "category",
+                    "image"
                 ],
                 "guarded": [
                     "*"
@@ -5138,7 +5581,8 @@
                         "title",
                         "price",
                         "description",
-                        "category"
+                        "category",
+                        "image"
                     ],
                     "guarded": [
                         "*"
@@ -5164,7 +5608,7 @@
                 },
                 "id": 1,
                 "createdAt": "2024-07-26 10:42:25",
-                "updatedAt": "2024-07-29 11:58:24",
+                "updatedAt": "2024-07-31 16:02:37",
                 "plural": "DashboardItems",
                 "pluralAndSingularAreSame": false,
                 "tableId": 10,
@@ -5175,8 +5619,8 @@
                 "removed": false
             },
             "__tableData": {
-                "count": 2,
-                "lastPrimaryKey": 2,
+                "count": 3,
+                "lastPrimaryKey": 3,
                 "index": {
                     "1": {
                         "hasMany": {
@@ -5204,6 +5648,9 @@
                                 2
                             ]
                         }
+                    },
+                    "3": {
+                        "hasMany": {}
                     }
                 },
                 "additionalIndexes": {},
@@ -5301,7 +5748,7 @@
                 },
                 "id": 2,
                 "createdAt": "2024-07-26 10:42:25",
-                "updatedAt": "2024-07-29 11:58:24",
+                "updatedAt": "2024-07-31 16:02:37",
                 "plural": "Users",
                 "pluralAndSingularAreSame": false,
                 "tableId": 1,
@@ -5310,6 +5757,80 @@
                 "attributesComments": true,
                 "methodsComments": true,
                 "removed": false
+            },
+            "item_3": {
+                "projectId": 1,
+                "name": "Account",
+                "fileName": "Account.php",
+                "tableName": "accounts",
+                "class": "App\\Models\\Account",
+                "namespace": "App\\Models",
+                "path": "Models\\Account.php",
+                "casts": [],
+                "fillable": [],
+                "guarded": [
+                    "*"
+                ],
+                "dates": [],
+                "hidden": [],
+                "appends": [],
+                "methods": [],
+                "createdFromInterface": false,
+                "parentClass": "Illuminate\\Database\\Eloquent\\Model",
+                "interfaces": [],
+                "traits": [
+                    "Illuminate\\Database\\Eloquent\\Factories\\HasFactory"
+                ],
+                "allImports": [
+                    "Illuminate\\Database\\Eloquent\\Factories\\HasFactory",
+                    "Illuminate\\Database\\Eloquent\\Model"
+                ],
+                "hasGuarded": false,
+                "hasFillable": false,
+                "hasTimestamps": true,
+                "hasSoftDeletes": false,
+                "isAuthenticatable": false,
+                "schemaState": {
+                    "name": "Account",
+                    "fileName": "Account.php",
+                    "tableName": "accounts",
+                    "class": "App\\Models\\Account",
+                    "namespace": "App\\Models",
+                    "path": "Models\\Account.php",
+                    "casts": [],
+                    "fillable": [],
+                    "guarded": [
+                        "*"
+                    ],
+                    "dates": [],
+                    "hidden": [],
+                    "appends": [],
+                    "methods": [],
+                    "parentClass": "Illuminate\\Database\\Eloquent\\Model",
+                    "interfaces": [],
+                    "traits": [
+                        "Illuminate\\Database\\Eloquent\\Factories\\HasFactory"
+                    ],
+                    "allImports": [
+                        "Illuminate\\Database\\Eloquent\\Factories\\HasFactory",
+                        "Illuminate\\Database\\Eloquent\\Model"
+                    ],
+                    "hasGuarded": false,
+                    "hasFillable": false,
+                    "hasTimestamps": true,
+                    "hasSoftDeletes": false,
+                    "isAuthenticatable": false
+                },
+                "id": 3,
+                "createdAt": "2024-07-31 16:02:37",
+                "updatedAt": "2024-07-31 16:02:37",
+                "plural": "Accounts",
+                "pluralAndSingularAreSame": false,
+                "tableId": 11,
+                "callSeeder": true,
+                "seederQuantity": 5,
+                "attributesComments": false,
+                "methodsComments": false
             }
         },
         "fillable_model_column": {
@@ -5538,7 +6059,8 @@
                         "hasMany": {
                             "tables.sectionId": [
                                 1,
-                                10
+                                10,
+                                11
                             ]
                         }
                     },

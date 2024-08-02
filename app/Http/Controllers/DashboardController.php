@@ -45,6 +45,12 @@ class DashboardController extends Controller
     ]);
   }
 
+  public function show($id)
+  {
+    $item = DashboardItem::findOrFail($id);
+    return response()->json($item, 200);
+  }
+
   public function destroy($id)
   {
     $item = DashboardItem::findOrFail($id);
@@ -71,7 +77,7 @@ class DashboardController extends Controller
     if ($request->hasFile('image')) {
       $file = $request->file('image');
       $path = $file->store('images', 'public');
-      $data['image'] = $path;
+      $data['image'] = '/storage/' . $path;
     }
 
     $item = DashboardItem::create($data);
