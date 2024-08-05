@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Models\DashboardItem;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
+// use Illuminate\Support\Facades\Log;
 
 class DashboardController extends Controller
 {
@@ -86,6 +87,16 @@ class DashboardController extends Controller
 
   public function update(Request $request, $id)
   {
+    $request->headers->set('Accept', 'application/json');
+    $request->headers->set('Content-Type', 'application/json');
+
+    \Log::info('Update request received for item ' . $id);
+    \Log::info('Request method: ' . $request->method());
+    \Log::info('Request content type: ' . $request->header('Content-Type'));
+    \Log::info('Raw request content: ' . $request->getContent());
+    \Log::info('Request data:', $request->all());
+    \Log::info('Request input:', $request->input());
+
     $validator = Validator::make($request->all(), [
       'title' => 'sometimes|required|string|max:255',
       'price' => 'sometimes|required|numeric|min:0',
@@ -104,7 +115,9 @@ class DashboardController extends Controller
     if ($request->hasFile('image')) {
       $file = $request->file('image');
       $path = $file->store('images', 'public');
-      $data['image'] = $path;
+      $item->image = '/storage/' . $path;
+    } elseif ($request->has('image') && $request->input('image') === null) {
+      $item->image = null;
     }
 
     $item->update($data);
