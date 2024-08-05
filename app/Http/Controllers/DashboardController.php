@@ -25,7 +25,7 @@ class DashboardController extends Controller
     }
 
     // Sorting
-    $sortField = $request->input('sort_by', 'created_at');
+    $sortField = $request->input('sort_column', 'created_at');
     $sortDirection = $request->input('sort_direction', 'desc');
     if ($sortField === 'created_at') {
       $query->latest();
